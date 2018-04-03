@@ -1,65 +1,27 @@
-# 2018_nih_datascience_rfi
-This is a short response to the 2018 RFI on NIH Strategic Plan for Data Science
-
-# Purpose
-On March 5th, 2018 [this post](https://nexus.od.nih.gov/all/2018/03/05/requesting-your-input-on-the-draft-nih-strategic-plan-for-data-science/) announced a request for information (RFI) on the
-NIH [Strategic Plan for Data Science](https://grants.nih.gov/grants/rfi/NIH-Strategic-Plan-for-Data-Science.pdf).
-Responses are due April 2nd, 2018 on [this form](https://grants.nih.gov/grants/rfi/rfi.cfm?ID=73).
-
-**This repo contains language that you can use in your response to this RFI**
-
-## How to use these comments
+# Goal 3: "Support the Development and Dissemination of Advanced Data Management, Analytics, and Visualization Tools"
 
 
-Importantly, (and related to the writing tip below) we need every member of the
-community to create a lot of noise. Your comment is your vote. Review the arguments/points in these comments and use them to submit at [this form](https://grants.nih.gov/grants/rfi/rfi.cfm?ID=73). If NIH sees enough of
-the same comments from enough people the message will get across.
-Get your colleagues involved too! Feel free to say things in your own words, or
-pull directly from language used here. Only submit comments that represent your
-views; see [guide notice instructions](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-18-134.html)
 
-P.S. If you like, include a link to this repo in your submitted comments so
-NIH can see updates: https://github.com/JasonJWilliamsNY/2018_nih_datascience_rfi 
+##  The appropriateness of the goals of the plan and of the strategies and implementation tactics proposed to achieve them
+
+The strategy to leverage and support existing tool-sharing systems to encourage "marketplaces" for tools developers, and to separate funding of tool development and data generation is very important, and we support this direction of the NIH. This is a proven strategy to elavate high quality tools, for example, in the world of high-throughput genomics, one can consider the NHGRI funded Bioconductor Project as a decade-long successful use case in providing a unified interface for more than 1,000 "high-quality, open-source data management, analytics, and visualization tools".
+
+## Opportunities for NIH to partner in achieving these goals
 
 
-## How to contribute
 
-At least a few folks have expressed interest in collaborating on a response.
-Hopefully this results in NIH getting the same messages multiple times. Hope
-folks chime in on how to make that happen, but in my (Jason) opinion we have to
-keep our message short and to the point ... this is a strategic plan so nuanced
-comments will just get deflected.
+##  Additional concepts that should be included in the plan
 
-Repo is organized so that your comments on a specific goal can be captured
-according to the headings on the NIH feedback form.
+The proposal as currently mentioned does not mention (1) computational reproducibility, or (2) exploratory data analysis for data quality control. These two topics are critical for the high-level goal of "extracting understanding from large-scale or complex biomedical research data". 
 
-Please submit a pull request, or (and especially if you aren't familiar with
-Github) please click the issues tab to open an issue, or Tweet/email me (email =
-my last name @ cshl.edu).
+Computational reproducibility can be defined as the ability to produce identical results from identical data input or "raw data", and relies on biomedical researchers keeping track of metadata regarding the versions of tools that were used, the way in which tools were run, and the provenance and version of publicly available annotation files if these were used. This is very important for data science: if two groups observe discrepencies between their results, they absolutely must be able to identify the source, whether it be methodological or due to different versions of software or annotation data. 
 
-### Writing tip
+Exploratory data analysis (EDA) needs to be a key component of the data science plan, as this should be the first step of any data analysis involving complex biological data. EDA is often how a data scientist will identify data artifacts, technical biases, batch effects, outliers, unaccounted for or unexpected heterogeneity, need for data transformation, or other various data quality issues that will cause serious problems for downstream methods, whether they be statistical methods, machine learning, deep learning, artificial intelligence or otherwise. Downstream methods may either fail to detect the relevant signal (loosely categorized as "false negatives") or may produce many spurious results which are purely associations with technical aspects of the data ("false positives"). Furthermore, Basic EDA can uncover biological signal that may be missed, such as biologically relevant heterogeneity, e.g. subtypes of disease with signal present in molecular data.
 
-Be clear - a RFI is not the place for subtlety. While I can’t speak on behalf
-of NIH, what happens is that comments are classified as good/positive or
-bad/negative and summed up. That’s it. Your carefully crafted arguments won’t
-mean much if NIH does not receive a clear message that “Goal 1”, or
-"Objective 4-3" got 50 positive comments and 3 negative comments. Hopefully
-someone comes back to appreciate the cleverness of your prose, but make sure
-your comment is to-the-point.
+Computational reproducibilty and supporting EDA should be components of both NIH funded tool development, as well as the plan to "Enhance Workforce Development for Biomedical Data Science" (Goal 4).
+
+## Performance measures and milestones that could be used to gauge the success of elements of the plan and inform course corrections
 
 
-## Contributors
-Besides the enormous sense of pride your contribution will no doubt create,
-please add your name here in case anyone from NIH looks (I'll add a link to this
-repo in the response in case it continues to grow). This will be more obvious
-than looking through commit histories, and I will only put any names here if
-you tell me you want acknowledgement - some may wish to be somewhat anonymous.
 
-- -Jason Williams - Cold Spring Harbor Laboratory, NY
-  - **Bio sentence**: Diversity advocate, founder CSHL Biological Data Science Meeting,
-    Software Carpentry instructor and former foundation Chair, External consultant to
-    NIH Data Commons, #underrepresentedinSTEM
-    
-- Michael Love - University of North Carolina at Chapel Hill, NC
-  - **Bio sentence**: statistician and computational biologists, I maintain a number of 
-    R/Bioconductor packages and workflows for genomic data analysis.
+## Any other topic the respondent feels is relevant for NIH to consider in developing this strategic plan
